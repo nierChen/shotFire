@@ -69,7 +69,7 @@
 
     var newTime = new Date();
     if (newTime - lastTime > 200 + (window.innerHeight - 767) / 2) {
-      var random = Math.random() * 100 > 2 ? true : false;
+      var random = Math.random() > 0.1 ? true : false;
       var x = getRandom(canvas.width / 5, canvas.width * 4 / 5);
       var y = getRandom(50, 200);
       if (random) {
